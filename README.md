@@ -1,5 +1,52 @@
 # Federal Case Management System
 
+## Chosen Direction
+
+This project will follow **Option B: Full-Stack Case Management App** using **Stack 2: Operational App**.
+
+That is the best choice for a post-graduation portfolio project because it shows:
+
+- real product thinking
+- database design
+- authentication and permissions
+- auditability
+- workflow management
+- production-minded architecture
+
+## Why This Option
+
+Option B is strong enough to feel serious, but still realistic enough to finish.
+
+It gives you a project that is more than a UI demo and more than an oversized enterprise system. It sits in the middle, where a capstone project should be.
+
+### What It Proves
+
+- you can model a real business domain
+- you can build persistent workflows
+- you understand role-based access
+- you can design for traceability and accountability
+- you can ship something that looks and behaves like a real system
+
+## Recommended Stack
+
+Use this stack:
+
+- Next.js
+- TypeScript
+- PostgreSQL
+- Prisma or Drizzle
+- Auth.js or a similar auth layer
+- Tailwind CSS for UI styling
+
+### Why This Stack
+
+- Next.js gives you frontend and backend capability in one project
+- TypeScript helps keep the codebase structured and maintainable
+- PostgreSQL is a strong, production-grade database
+- Prisma or Drizzle makes the schema and data access clean
+- Auth.js gives you a practical authentication base
+- Tailwind CSS helps you build a polished, information-dense UI quickly
+
 ## Project Goal
 
 Build a federal-style case management system for tracking matters, parties, tasks, deadlines, documents, decisions, and audit history in a structured and secure way.
@@ -14,25 +61,28 @@ The system should feel appropriate for government or regulated workflows:
 - deadline and task management
 - search and filtering across records
 
-## What This Project Should Solve
+## Resume and Capstone Value
 
-This project is meant to replace scattered spreadsheets, email threads, and manual status updates with a single source of truth for case work.
+This should read like a real portfolio project, not a tutorial clone.
 
-Typical problems it should address:
+The strongest signals are:
 
-- tracking too many active cases at once
-- losing visibility into deadlines and ownership
-- not knowing who changed what and when
-- managing parties, filings, and notes in separate places
-- inconsistent status reporting across teams
+- a clear domain model instead of random demo screens
+- role-based access and controlled actions
+- audit history for important state changes
+- real persistence instead of static mock data
+- thoughtful UX for dense operational workflows
+- search, filtering, and fast navigation
+- accessibility and responsive layout
+- testing and deployment readiness
 
-## Core Modules
+## Product Scope
 
 ### 1. Dashboard
 
 The dashboard should show the current operational picture at a glance.
 
-Possible widgets:
+Recommended widgets:
 
 - active cases
 - cases due soon
@@ -164,118 +214,11 @@ Relationships to think about:
 - one user can own many tasks
 - one unit can manage many cases
 
-## Option Paths
-
-You can take this project in a few different directions depending on how deep you want to go.
-
-### Option A: Front-End Prototype
-
-Best if you want to move fast and prove the workflow.
-
-What you get:
-
-- dashboard mockup
-- case list and detail views
-- filter/search behavior
-- local demo data
-- polished federal-style UI
-
-Tradeoff:
-
-- no real backend yet
-- data is not persistent beyond browser storage
-
-### Option B: Full-Stack Case Management App
-
-Best if you want a working application with persistent records.
-
-What you get:
-
-- frontend + backend
-- database models
-- authentication
-- CRUD operations for cases, tasks, and documents
-- audit logging
-- role-based permissions
-
-Tradeoff:
-
-- more setup and more moving parts
-- takes longer to reach a finished state
-
-### Option C: Secure Enterprise Platform
-
-Best if this needs to behave like a regulated federal system.
-
-What you get:
-
-- stricter auth and access control
-- immutable audit history
-- document retention rules
-- approval workflows
-- reporting and exports
-- observability and operational logging
-- deployment-ready architecture
-
-Tradeoff:
-
-- highest complexity
-- requires careful planning before coding much of anything
-
-## Recommended Stack Options
-
-### Stack 1: Fastest Start
-
-Use this if you want to build the product quickly.
-
-- Next.js
-- TypeScript
-- Tailwind CSS
-- SQLite for local development
-- Prisma for data access
-
-Why choose it:
-
-- easy to build a polished UI
-- good for iterative development
-- scales from prototype to production
-
-### Stack 2: Operational App
-
-Use this if the app needs to become real soon.
-
-- React or Next.js
-- TypeScript
-- PostgreSQL
-- Prisma or Drizzle
-- Auth.js or a similar auth layer
-
-Why choose it:
-
-- better long-term data handling
-- easier to expand into enterprise workflows
-
-### Stack 3: Compliance-Heavy Environment
-
-Use this if security and governance are the main priority.
-
-- Next.js or separate frontend/backend services
-- PostgreSQL
-- strict role-based access control
-- audit event table
-- file storage service
-- server-side logging and monitoring
-
-Why choose it:
-
-- better fit for controlled environments
-- easier to enforce governance rules
-
-## Suggested Build Phases
+## Build Phases
 
 ### Phase 1: Project Definition
 
-Decide:
+Lock down:
 
 - target users
 - must-have modules
@@ -283,7 +226,7 @@ Decide:
 - roles and permissions
 - deployment style
 
-### Phase 2: UI Prototype
+### Phase 2: UI and Navigation
 
 Build:
 
@@ -330,35 +273,26 @@ Add:
 - accessibility review
 - testing
 
-## Questions To Decide Next
+## Recommended End State
 
-To move deeper, the next decision points are:
+The final version should look like a polished operational product with:
 
-1. Do you want this to stay a prototype first, or become a full application immediately?
-2. Do you want browser-only local storage, or a real database-backed system?
-3. Should the system focus on case tracking, document management, or both equally?
-4. What roles need access on day one?
-5. Do you want a modern federal UI, a more traditional government UI, or a highly minimal administrative UI?
+- a modern but restrained federal-style interface
+- real persistent data
+- permission-aware workflows
+- visible auditability
+- reliable search and reporting
+- deployment and documentation
 
-## My Recommendation
-
-If you want to go in depth without getting overwhelmed, start with Option B:
-
-- a real full-stack case management app
-- a clear database schema
-- role-based access
-- audit history from the beginning
-- a strong UI shell that can grow with the system
-
-That gives you a real foundation instead of just a visual mockup.
+That combination makes the project credible as a graduate-level portfolio piece.
 
 ## Next Step
 
-If you want, the next file can become the actual project blueprint with:
+The best next file to create is the actual implementation blueprint with:
 
 - page list
-- data model
-- permission matrix
 - database schema
-- user flows
-- implementation phases
+- permission matrix
+- workflow states
+- API or server action plan
+- milestone roadmap
