@@ -288,7 +288,18 @@ That combination makes the project credible as a graduate-level portfolio piece.
 
 ## Next Step
 
-The best next file to create is the actual implementation blueprint with:
+Phase 1 is now finalized through the supporting artifacts in this repository:
+
+- [Phase 1 project definition](PHASE-1-PROJECT-DEFINITION.md)
+- [Feature scope](FEATURE-SCOPE.md)
+- [Permission matrix](PERMISSION-MATRIX.md)
+- [Data model sketch](DATA-MODEL-SKETCH.md)
+- [Page inventory](PAGE-INVENTORY.md)
+- [Milestone roadmap](MILESTONE-ROADMAP.md)
+
+The next implementation step is to turn the phase plan into the app shell and data layer.
+
+The core phase document now defines:
 
 - page list
 - database schema
